@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kiryonn.UnityAttributes.Editor
 {
-	[CustomPropertyDrawer(typeof(DisableInInspector))]
+	[CustomPropertyDrawer(typeof(DisableInInspectorAttribute))]
 	public class DisableInInspectorPropertyDrawer : PropertyDrawer
 	{
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)

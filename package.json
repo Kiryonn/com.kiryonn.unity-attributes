@@ -1,11 +1,14 @@
 {
   "name": "com.kiryonn.unity-attributes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Kiryonn Attributes",
   "description": "This is a unity package that adds QoL Attributes.",
   "unity": "6000.0",
   "author": {
     "name": "Kiryonn",
     "url": "https://github.com/kiryonn"
+  },
+  "dependencies": {
+    "com.kiryonn.unity-searchables": "https://github.com/Kiryonn/com.kiryonn.unity-searchables.git"
   }
 }

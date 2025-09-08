@@ -2,7 +2,8 @@
     "name": "Kiryonn.UnityAttributes.Editor",
     "rootNamespace": "Kiryonn.UnityAttributes.Editor",
     "references": [
-        "GUID:9e3ba739305a56249a0b24e896226ab3"
+        "Kiryonn.UnityAttributes",
+        "Kiryonn.Searchables"
     ],
     "includePlatforms": [
         "Editor"
