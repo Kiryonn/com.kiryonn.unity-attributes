@@ -1,0 +1,18 @@
+{
+    "name": "Kiryonn.UnityAttributes.Editor",
+    "rootNamespace": "Kiryonn.UnityAttributes.Editor",
+    "references": [
+        "GUID:9e3ba739305a56249a0b24e896226ab3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
