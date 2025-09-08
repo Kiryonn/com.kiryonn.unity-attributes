@@ -1,3 +1,3 @@
-## [1-0-0] - 2025-06-06
+## [1-0-0] 2025-09
 ### First Release
-- Added DisableInInspector to display a field in the inspector but not let user interact with it.
+- Added [DisableInInspector](Runtime/DisableInInspector.cs) and [SerializeAbstractField](Runtime/SerializeAbstractField.cs)

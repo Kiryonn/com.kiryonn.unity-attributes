@@ -10,10 +10,16 @@ The installation is quite strait forward:
 - press `Enter`
 
 ## How To Use
-Simply write in your C# scripts `[TheAttributeYouNeed]` above a class, field, property, or method to add Editor/Runtime functionalities.
+Refer to the official documentation about [C# Attributes](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/).
 
 ## List of Attributes
 
-| Attributes | Description | Compatible with |
-|---|---|---|
-| DisableInInspector | Makes inspector visible field readonly. Useful for debuging. For instance disabling an ID field, you might want to see it, but prevent its modification to not create bugs. | `fields` |
+| Attributes | Use on | Description | Usage Example |
+|---|---|---|---|
+| DisableInInspector | `fields` | Makes inspector visible field readonly. | Disabling an ID field, you might want to see/copy it, but prevent its modification to avoid bugs. |
+| SerializeAbstractField | `fields` | Makes it possible to modify an abstract field by instancing one of it's concrete children classes. Also works with Generic Classes. | Expose a `List<Enemy>` when Enemy is abstract. Maybe you'd want a `Goblin<T> where T : Element`, thus instancing `Goblin<Mind>` is possible. |
+
+
+## Known Bugs
+- Trying to instanciate a Generic Class with SerializeAbstractField only works if said class only have 1 Generic Type.
+
