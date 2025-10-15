@@ -236,10 +236,9 @@ namespace Kiryonn.UnityAttributes.Editor
 			var constructedType = _rootNode.CreateFinalType();
 
 			// Some generic args are still undefined
-			if (constructedType == null) return;
-
-			// The type defined is already the same
-			if (_property.managedReferenceValue.GetType() == constructedType) return;
+			// Or the type defined is already the same
+			if (constructedType == null || _property.managedReferenceValue?.GetType() == constructedType)
+				return;
 
 			// Try to create an instance of the final type
 			// This will fail if there is no default constructor
